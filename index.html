@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" class="href">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Daily Deals</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">contact</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="slider">
+                    <div class="product">
+                        <img src="images/product1.png" alt="" onclick="clikme(this)">
+                        <img src="images/product2.png" alt=""  onclick="clikme(this)>
+                        <img src="images/product3.png" alt="" ondblclick="clikme(this)">
+                        <img src="images/product4.png" alt="" onclick="clikme(this)">
+                    </div>
+                    <div class="preview">
+                        <img src="images/product1.png"  id="imagebox"alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <p class="brand">Brand: varange</p>
+                    <h2>Woman Black Quirky Print Empire Dress</h2>
+                    <div class="rating"></div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-0"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Brand: varange</p>
+                <p>size: <select name="size">
+
+                    <option value="select size">select size</option>
+                    <option value="small">small</option>
+                    <option value="mediam">mediam</option>
+                    <option value="largr">large</option>
+
+                </select></p>
+                <p>Quantity:<input type="text" value="1"></p>
+                <button type="button">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    Add to cart</button>
+            </div>
+        </div>
+        <div class="related">
+            <h2>related itmes</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/item1.png" alt="">
+                        <div class="details">
+                            <p>Woman Brown Solid jaclet</p>
+                             <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-0"></i>
+                        </div>
+                        <p>usd $120.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/item2.png" alt="">
+                        <div class="details">
+                            <p>Navy Blue Flared Palazzos</p>
+                             <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-0"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>usd $80.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/item3.png" alt="">
+                        <div class="details">
+                            <p>Jacquard Banarsi dupatta</p>
+                             <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-0"></i>
+                        </div>
+                        <p>usd $60.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/item4.png" alt="">
+                        <div class="details">
+                            <p>Printed Straight Kurta</p>
+                             <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-0"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>usd $140.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clikme(smallImg){
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src
+        }
+    </script>
+</body>
+</html>
